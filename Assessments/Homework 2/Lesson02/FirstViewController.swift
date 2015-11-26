@@ -11,9 +11,16 @@ import UIKit
 class FirstViewController: UIViewController {
     
     @IBOutlet weak var nameLabel: UITextField!
-    
     @IBOutlet weak var ageLabel: UITextField!
+    @IBOutlet weak var placeHolderTextLabel: UILabel!
+    @IBOutlet weak var youCanLabel: UILabel!
+    @IBOutlet weak var helloWorldLabel: UILabel!
     
+    @IBOutlet weak var driveDrinkVoteLabel: UILabel!
+    @IBAction func hellWorldButton(sender: AnyObject) {
+        
+        helloWorldLabel.text = "Hello World"
+    }
     /*
     TODO one: hook up a button in interface builder to a new function (to be written) in this class. Also hook up the label to this class. When the button is clicked, the function to be written must make a label say ‘hello world!’
     
@@ -23,5 +30,35 @@ class FirstViewController: UIViewController {
     */
     @IBAction func generateText(sender: AnyObject) {
         
+        placeHolderTextLabel.text = "Hello \(nameLabel.text!), you are \(ageLabel.text!) years old!"
+        
+        
+        let age = Int(ageLabel.text!)
+        
+        if age >= 21 {
+            youCanLabel.text = "You can drink"
+        } else if age >= 18 {
+            youCanLabel.text = "You can vote"
+        } else if age >= 16 {
+            youCanLabel.text = "You can drive"
+        }
     }
+  
+    
+    
+    @IBAction func driveDrinkVoteButton(sender: AnyObject) {
+        
+        //driveDrinkVoteLabel.text = "Yes"
+        
+        let age2 = Int(ageLabel.text!)
+        
+            if age2 >= 16 && age2 <= 18 {
+                driveDrinkVoteLabel.text = "You can drive"
+        } else if age2 >= 18 && age2 <= 21 {
+            driveDrinkVoteLabel.text = "You can drive and vote"
+        } else  if age2 >= 21 {
+            driveDrinkVoteLabel.text = "You can drive, vote and drink (but not at the same time!)"
+        }
+    }
+    
 }
