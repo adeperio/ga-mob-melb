@@ -12,6 +12,7 @@
 		BB75193D1C06ECB000F2F8F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB75193B1C06ECB000F2F8F8 /* Main.storyboard */; };
 		BB75193F1C06ECB000F2F8F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB75193E1C06ECB000F2F8F8 /* Assets.xcassets */; };
 		BB7519421C06ECB000F2F8F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB7519401C06ECB000F2F8F8 /* LaunchScreen.storyboard */; };
+		BB75194A1C06ECCB00F2F8F8 /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7519491C06ECCB00F2F8F8 /* Math.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		BB75193E1C06ECB000F2F8F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB7519411C06ECB000F2F8F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BB7519431C06ECB000F2F8F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB7519491C06ECCB00F2F8F8 /* Math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				BB7519371C06ECB000F2F8F8 /* AppDelegate.swift */,
 				BB7519391C06ECB000F2F8F8 /* ViewController.swift */,
 				BB75193B1C06ECB000F2F8F8 /* Main.storyboard */,
+				BB7519491C06ECCB00F2F8F8 /* Math.swift */,
 				BB75193E1C06ECB000F2F8F8 /* Assets.xcassets */,
 				BB7519401C06ECB000F2F8F8 /* LaunchScreen.storyboard */,
 				BB7519431C06ECB000F2F8F8 /* Info.plist */,
@@ -138,6 +141,7 @@
 			files = (
 				BB75193A1C06ECB000F2F8F8 /* ViewController.swift in Sources */,
 				BB7519381C06ECB000F2F8F8 /* AppDelegate.swift in Sources */,
+				BB75194A1C06ECCB00F2F8F8 /* Math.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
