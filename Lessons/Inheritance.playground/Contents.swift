@@ -27,16 +27,10 @@ class Animal {
 
 class Lion : Animal {
     
-    override init() {
-        print("Lion init")
-        super.init()  //initatlises the base class Animal initialiser
-    }
-   //subclass
+       //subclass
     
-    override func walk()
-    {
-         print("Lion Walking")
-    }
+    func walk()
+    
     func roar(){
         print("Lion Roaring")
         
