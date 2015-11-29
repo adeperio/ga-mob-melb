@@ -19,12 +19,8 @@ class SecondViewController: UIViewController {
 
 
     @IBAction func addNumbers(sender: AnyObject) {
+         Newtotal.text = "Yes"
   
-    let number = Int(newNUmber.text!)
-    let total2 = Int(Newtotal.text!)
-        
-        
-        
     }
 
 }
