@@ -130,16 +130,53 @@
 //    // Call Fibonacci method.
 //    let result = fibonacci(i)
 //    print("Fibonacci \(i) = \(result)")
+////}
+//
+//let myArray = [2,8,1,16,4,3,9]
+//var sum = 0
+//var counter = 0
+//
+//
+//while counter < myArray.count {
+//    var newValue = myArray[counter]
+//    sum += newValue
+//    counter++
 //}
+//print(sum)
+//
 
-let myArray = [2,8,1,16,4,3,9]
-var sum = 0
-var counter = 0
+class Fibanacci: NSObject {
+
+var var1 :      Int = -1
+var var2 :      Int = 1
+var counter :   Int = 7
 
 
-while counter < myArray.count {
-    var newValue = myArray[counter]
-    sum += newValue
-    counter++
+func fib ()
+{
+    
+    for var loop : Int = 1;loop <= counter ; ++loop
+    {
+        var1 = var1 + var2
+        
+        ++loop
+        
+        var2 = var1 + var2
+        print("\(var1)")
+        //      print("\(var2) loop no. \(loop)")
+        
+        
+        
+        
+    }
+    print("At position \(counter) the fibanacci number is  \(var2)")
 }
-print(sum)
+}
+
+var fibInstance = Fibanaci()
+fibInstanceCounter = 10
+fibInstance.fib()
+
+
+
+
