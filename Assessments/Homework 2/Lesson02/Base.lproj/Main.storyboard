@@ -3,7 +3,10 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+<<<<<<< HEAD
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+=======
+>>>>>>> d09d5372a5cb660c966041608cddee0633af35e4
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -62,6 +65,7 @@
                                     <constraint firstAttribute="width" constant="225" id="hvx-L4-P7p"/>
                                     <constraint firstAttribute="height" constant="30" id="kbj-lV-OfZ"/>
                                 </constraints>
+<<<<<<< HEAD
                                 <state key="normal" title="Generate Text!!!"/>
                                 <connections>
                                     <action selector="changeLabel:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="vhL-Ha-qyO"/>
@@ -76,6 +80,9 @@
                                     <constraint firstAttribute="width" constant="225" id="fWO-ie-AlD"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
+=======
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+>>>>>>> d09d5372a5cb660c966041608cddee0633af35e4
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -86,9 +93,18 @@
                                     <constraint firstAttribute="width" constant="225" id="5Xg-WH-Dpg"/>
                                     <constraint firstAttribute="height" constant="30" id="bab-3m-rNE"/>
                                 </constraints>
+<<<<<<< HEAD
                                 <state key="normal" title="Hello World!"/>
                                 <connections>
                                     <action selector="helloWorld:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Hu4-6D-0OH"/>
+=======
+                                <state key="normal" title="Generate text!">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="fucntion2:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Ogw-0H-63B"/>
+                                    <action selector="function1:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="SfE-tn-15a"/>
+>>>>>>> d09d5372a5cb660c966041608cddee0633af35e4
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yWz-8M-Oos">
@@ -183,7 +199,11 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+<<<<<<< HEAD
                                     <action selector="addCumulativeNumber:" destination="DXI-gN-4Tg" eventType="touchUpInside" id="gBF-7E-C5M"/>
+=======
+                                    <action selector="add:" destination="DXI-gN-4Tg" eventType="touchUpInside" id="MTw-CB-2nJ"/>
+>>>>>>> d09d5372a5cb660c966041608cddee0633af35e4
                                 </connections>
                             </button>
                         </subviews>
@@ -206,8 +226,13 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+<<<<<<< HEAD
                         <outlet property="addAnswerLabel" destination="qiz-6d-s2d" id="N4s-DP-aSU"/>
                         <outlet property="addNumber" destination="dsS-73-FSq" id="iEc-VN-uHC"/>
+=======
+                        <outlet property="resultLabel" destination="qiz-6d-s2d" id="MMk-fV-fJT"/>
+                        <outlet property="textField" destination="dsS-73-FSq" id="gk5-7c-RnX"/>
+>>>>>>> d09d5372a5cb660c966041608cddee0633af35e4
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bFb-9H-Aa6" userLabel="First Responder" sceneMemberID="firstResponder"/>

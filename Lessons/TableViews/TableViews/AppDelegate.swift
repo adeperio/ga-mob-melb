@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  TableViews
 //
-//  Created by Sam Wijesinha on 3/12/2015.
-//  Copyright © 2015 SamWij. All rights reserved.
+//  Created by Antonio de Perio on 3/12/2015.
+//  Copyright © 2015 Workshop. All rights reserved.
 //
 
 import UIKit
