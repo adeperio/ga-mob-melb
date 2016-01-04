@@ -17,6 +17,7 @@ class FirstViewController: UIViewController {
     @IBOutlet weak var helloWorldLabel: UILabel!
     
     @IBOutlet weak var driveDrinkVoteLabel: UILabel!
+    
     @IBAction func hellWorldButton(sender: AnyObject) {
         
         helloWorldLabel.text = "Hello World"
@@ -32,15 +33,14 @@ class FirstViewController: UIViewController {
         
         placeHolderTextLabel.text = "Hello \(nameLabel.text!), you are \(ageLabel.text!) years old!"
         
-        
         let age = Int(ageLabel.text!)
         
         if age >= 21 {
-            youCanLabel.text = "You can drink"
+            youCanLabel.text = "You can drink!"
         } else if age >= 18 {
-            youCanLabel.text = "You can vote"
+            youCanLabel.text = "You can vote!"
         } else if age >= 16 {
-            youCanLabel.text = "You can drive"
+            youCanLabel.text = "You can drive!"
         }
     }
   
@@ -48,14 +48,15 @@ class FirstViewController: UIViewController {
     
     @IBAction func driveDrinkVoteButton(sender: AnyObject) {
         
+        
         //driveDrinkVoteLabel.text = "Yes"
         
         let age2 = Int(ageLabel.text!)
         
             if age2 >= 16 && age2 <= 18 {
-                driveDrinkVoteLabel.text = "You can drive"
+                driveDrinkVoteLabel.text = "You can drive!"
         } else if age2 >= 18 && age2 <= 21 {
-            driveDrinkVoteLabel.text = "You can drive and vote"
+            driveDrinkVoteLabel.text = "You can drive and vote!"
         } else  if age2 >= 21 {
             driveDrinkVoteLabel.text = "You can drive, vote and drink (but not at the same time!)"
         }

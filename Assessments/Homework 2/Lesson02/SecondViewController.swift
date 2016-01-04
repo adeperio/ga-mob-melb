@@ -10,8 +10,10 @@ import UIKit
 
 class SecondViewController: UIViewController {
 
-    @IBOutlet weak var newNUmber: UITextField!
-    @IBOutlet weak var Newtotal: UILabel!
+
+    @IBOutlet weak var currentNumber: UITextField!
+   
+    @IBOutlet weak var runningTotal: UILabel!
     
     
     
@@ -19,9 +21,10 @@ class SecondViewController: UIViewController {
 
 
     @IBAction func addNumbers(sender: AnyObject) {
-  
-    let number = Int(newNUmber.text!)
-    let total2 = Int(Newtotal.text!)
+        
+        
+        
+        runningTotal.text = "Yes"
         
         
         
