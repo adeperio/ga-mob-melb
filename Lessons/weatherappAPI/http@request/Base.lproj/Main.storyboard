@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="HY8-wJ-Lrw">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--Weatherapp View Controller-->
+        <scene sceneID="oQC-zt-tnn">
+            <objects>
+                <viewController id="HY8-wJ-Lrw" customClass="weatherappViewController" customModule="http_request" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yI6-i2-UQd"/>
+                        <viewControllerLayoutGuide type="bottom" id="Wjb-GL-m7P"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hiA-CP-f1a">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q7Q-rO-x0H">
+                                <rect key="frame" x="164" y="207" width="272" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LFX-m1-yIQ">
+                                <rect key="frame" x="164" y="255" width="272" height="73"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ugk-6u-GDR">
+                                <rect key="frame" x="164" y="129" width="272" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rek-5s-sXw">
+                                <rect key="frame" x="278" y="167" width="30" height="30"/>
+                                <state key="normal" title="Go"/>
+                                <connections>
+                                    <action selector="findWeather:" destination="HY8-wJ-Lrw" eventType="touchUpInside" id="g94-hK-ofe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LFX-m1-yIQ" firstAttribute="centerX" secondItem="hiA-CP-f1a" secondAttribute="centerX" id="UlN-gX-fan"/>
+                            <constraint firstItem="ugk-6u-GDR" firstAttribute="centerX" secondItem="hiA-CP-f1a" secondAttribute="centerX" id="Vss-i1-9ok"/>
+                            <constraint firstItem="rek-5s-sXw" firstAttribute="centerX" secondItem="hiA-CP-f1a" secondAttribute="centerX" id="cvC-RV-sVq"/>
+                            <constraint firstItem="Q7Q-rO-x0H" firstAttribute="centerX" secondItem="hiA-CP-f1a" secondAttribute="centerX" id="leD-Qh-eSj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="city" destination="Q7Q-rO-x0H" id="sdX-wd-ZEy"/>
+                        <outlet property="enterCity" destination="ugk-6u-GDR" id="cpo-WT-GUX"/>
+                        <outlet property="temp" destination="LFX-m1-yIQ" id="mgi-SR-Qto"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UZR-9g-h8g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="831" y="137"/>
+        </scene>
+    </scenes>
+</document>
